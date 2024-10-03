@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="CvEntityProje.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CV PANELİ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="Login/images/icons/profile.png" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="navbar-header">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <img src="Login/images/icons/profile.png" style="width: 40px; height: 40px" />
+                <a class="navbar-brand">CV ADMIN PANELİ</a>
+            </div>
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="Default.aspx">SİTEYE GİT</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="Yeteneklerim.aspx">YETENEKLERİM</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="Projelerim.aspx">PROJELERİM</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="/Iletisim.aspx">İLETİŞİM</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="/Login.aspx">ÇIKIŞ YAP</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="container">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
